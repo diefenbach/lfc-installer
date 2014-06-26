@@ -1,14 +1,15 @@
-What is it?
-===========
+Introduction
+============
 
-This is the installer for LFC
+This is the installer for `LFC`_, a Content Managment System based on Python,
+Django and jQuery.
 
-LFC is an online shop based on Python, Django and jQuery.
+.. _`LFC`: http://pypi.python.org/pypi/django-lfc
 
 How to use it?
 ==============
 
-Please see 
+Please see
 
 http://packages.python.org/django-lfc/introduction/installation.html
 
