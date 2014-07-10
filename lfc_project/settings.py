@@ -132,19 +132,10 @@ LOGGING = {
             "format": "%(asctime)s %(levelname)s %(message)s",
             "datefmt": "%a, %d %b %Y %H:%M:%S",
         },
-        "simple": {
-            "format": "%(levelname)s %(message)s",
-            "datefmt": "%a, %d %b %Y %H:%M:%S",
-        },
     },
     "handlers": {
-        "console": {
-            "level": "DEBUG",
-            "class": "logging.StreamHandler",
-            "formatter": "verbose",
-        },
         'logfile': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'verbose',
             'filename': os.path.join(DIRNAME, "..", "lfc.log"),
@@ -153,13 +144,13 @@ LOGGING = {
     },
     "loggers": {
         "default": {
-            "handlers": ["logfile", "console"],
-            "level": "DEBUG",
+            "handlers": ["logfile"],
+            "level": "INFO",
             "propagate": False,
         },
-        "qinspect": {
-            "handlers": ["console"],
-            "level": "DEBUG",
+        "portlets": {
+            "handlers": ["logfile"],
+            "level": "INFO",
             "propagate": False,
         },
     }
